@@ -32,7 +32,8 @@ mongoose
   })
   .then(async () => {
     app.listen(config.port, () => console.log(`Server Port: ${config.port}`));
-    await mongoose.connection.db.dropDatabase(); //Don't do it in a real production app, it's because we are testing things out so we want to drop our DB
-    KPI.insertMany(kpis);
+    /* ADD DATA ONE TIME ONLY OR AS NEEDED */
+    // await mongoose.connection.db.dropDatabase(); //Don't do it in a real production app, it's because we are testing things out so we want to drop our DB
+    // KPI.insertMany(kpis);
   })
   .catch((error) => console.log(`${error} didn't connect`));
