@@ -7,8 +7,10 @@ import morgan from 'morgan';
 import mongoose from 'mongoose';
 import config from './config.js';
 import kpiRoutes from '../routes/kpi.js';
+import productsRoutes from '../routes/product.js';
+import Product from '../models/product.js';
 import KPI from '../models/kpis.js';
-import { kpis } from '../data/data.js';
+import { kpis, products } from '../data/data.js';
 
 /* Congigurations */
 dotenv.config({ path: '../.env' });
@@ -23,6 +25,7 @@ app.use(cors());
 
 /* Routes */
 app.use('/kpi', kpiRoutes);
+app.use('/product', productsRoutes);
 
 /* Mongoose Setup */
 mongoose
@@ -35,5 +38,6 @@ mongoose
     /* ADD DATA ONE TIME ONLY OR AS NEEDED */
     // await mongoose.connection.db.dropDatabase(); //Don't do it in a real production app, it's because we are testing things out so we want to drop our DB
     // KPI.insertMany(kpis);
+    // Product.insertMany(products);
   })
   .catch((error) => console.log(`${error} didn't connect`));
