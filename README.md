@@ -1,6 +1,6 @@
 ## <img src="./client/public/logo.svg" height="20"/> Fiscalo
 
-### Finacne Chart based Application for admins to see the Profit, Revenue, Expenses and also has a simple Machine Learning Revenue Predictions
+### Fiscalo is a finacne charts based application for admins to see the profit, revenue, expenses and also has a simple machine learning revenue predictions
 
 Made by Michael Maher
 
