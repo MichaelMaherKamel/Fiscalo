@@ -1,4 +1,4 @@
-## <img src="./client/public/fiscalo.svg" height="20"/> Fiscalo
+## <img src="./client/public/logo.svg" height="20"/> Fiscalo
 
 ### Finacne Chart based Application for admins to see the Profit, Revenue, Expenses and also has a simple Machine Learning Revenue Predictions
 
