@@ -26,7 +26,7 @@ $ git clone https://github.com/MichaelMaherKamel/Fiscalo.git
 
 In the project directory, client folder you can run:
 
-### `npm init`
+### `npm install --force`
 
 To install the node_modules
 
@@ -40,7 +40,7 @@ You may also see any lint errors in the console.
 
 In the project directory, server folder you can run:
 
-### `npm init`
+### `npm install --force`
 
 To install the node_modules
 
